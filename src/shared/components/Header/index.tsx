@@ -1,9 +1,12 @@
+import Image from 'next/image';
+import logo from '../../../../public/logo.png'
+
 export const Header = () => {
   return (
-    <header className="bg-blue-500 flex justify-between items-center p-2">
-      <h1 className="text-5xl font-semibold">Meu Cabeçalho</h1>
+    <header className="bg-white flex justify-between items-center p-2">
+      <Image src={logo} alt='logo da empresa' width={80} height={80}/>
       <nav>
-        <ul className="flex items-center gap-3 hover:font-semibold">
+        <ul className="text-blue-950 flex items-center gap-3 hover:font-semibold">
           <li>
             <a href="/">Home</a>
           </li>
